@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gif Search Box</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <img src="#">
-    <script>
-        const img = document.querySelector('img')
-        fetch('https://api.giphy.com/v1/gifs/translate?api_key=jWd7HkgR1P1A2dOxpycwD4RHJMtgwzMf&s=cats', {mode : 'cors'}).then(function(response){
-            return response.json()
-        })
-        .then(function(response){
-            img.src = response.data.images.original.url
-        })
-    </script>
 </body>
 </html>
