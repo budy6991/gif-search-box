@@ -58,3 +58,8 @@ input[type=text] {
     justify-content: space-evenly;
     flex-grow: 0;
 }
+
+#error-container {
+    color: white;
+    font-size: larger;
+}

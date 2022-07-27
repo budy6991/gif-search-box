@@ -1,10 +1,6 @@
 const img = document.querySelector('img');
 const searchBox = document.getElementById('gifSearch');
 
-function refreshPage() {
-  window.location.reload();
-}
-
 fetch('https://api.giphy.com/v1/gifs/translate?api_key=jWd7HkgR1P1A2dOxpycwD4RHJMtgwzMf&s=cats', { mode: 'cors' })
 
   .then((response) => response.json())
@@ -21,6 +17,7 @@ document.querySelector('.search').onclick = () => {
     })
     .then(function(response) {
       img.src = response.data.images.original.url
-    });
+    }).catch(e => console.error(e)
+    )
   }
 };
