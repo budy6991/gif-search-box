@@ -16,9 +16,11 @@ document.querySelector('.search').onclick = () => {
     location.reload();
   } else if (searchBox.value != '') {
     fetch(`https://api.giphy.com/v1/gifs/translate?api_key=jWd7HkgR1P1A2dOxpycwD4RHJMtgwzMf&s=${searchBox.value}`, { mode: 'cors' })
-
-      .then((response) => response.json())
-
-      .then((response) => img.src = response.data.images.original.url);
+    .then(function(response) {
+      return response.json()
+    })
+    .then(function(response) {
+      img.src = response.data.images.original.url
+    });
   }
 };
