@@ -1,0 +1,22 @@
+{
+  "name": "gif-search-box",
+  "version": "1.0.0",
+  "description": "Simple API test",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budy6991/gif-search-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/budy6991/gif-search-box/issues"
+  },
+  "homepage": "https://github.com/budy6991/gif-search-box#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
