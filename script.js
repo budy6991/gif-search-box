@@ -10,8 +10,11 @@ const makeFetchRequest = async () => {
   img.src = responseData.data.images.original.url;
   errorContainer.textContent = '';
   } catch(err) {
-    errorContainer.textContent = 'Ups something went wrong, try again';
+    if (err instanceof TypeError) {
+    errorContainer.textContent = 'Only include characters in your input';
     err.textContent = errorContainer.textContent;
+    }
+    else errorContainer.textContent = 'Something went wrong'
   }
 };
 
