@@ -1,7 +1,3 @@
-require('dotenv').config()
-
-console.log(process.env)
-
 const img = document.querySelector('img');
 const userInput = document.getElementById('userInput');
 const errorContainer = document.getElementById('error-container');
